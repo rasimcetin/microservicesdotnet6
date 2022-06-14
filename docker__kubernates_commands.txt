@@ -1,0 +1,27 @@
+
+code -r CommandsService
+
+
+docker build -t rasimcetin87/commandservice .   /// dockerfile ile beraber commandservice imagini oluşturur
+
+docker push rasimcetin87/platformservice  /// platformservice imagını docker huba push eder	
+
+docker ps   /// çalışan containerları gösterir
+
+docker run -p 8080:80 -d rasimcetin87/platformservice   /// platformservice imagını çalıştırır
+
+kubectl apply -f platforms-depl.yaml  /// kubernatte deployment oluşturur
+
+kubectl get deployments  /// kubernatte deploymentları getirir
+
+kubectl get pods  /// podları getirir
+
+kubectl delete deployment platforms-depl /// deployment siler
+
+kubectl get service  /// serviceleri getirir
+
+kubectl rollout restart deployment platforms-depl   // kubernatte te bir deploymentı restart eder
+
+kubectl get namespaces // kubernatteki namespacesleri getirir
+
+kubectl get pods --namespace=ingress-nginx  // ingress-nginx namespacei altındaki podları getirir

@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=DgVjEo3OGBI#t=09h26m00s
+
+1:02:26
+2:16:22
+2:40:14
+3:30:41
+4:23:53
+4.52.21 #t=04h52m00s
+#t=10h20m55s
+
+
+
+https://www.youtube.com/watch?v=CqCDOosvZIk   /// .NET Microservices – Full Course for Beginners
+
+mssql 
+sa user name: mssql
+sa user password: pa55w0rd!	
+
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=pa55w0rd!" -e "MSSQL_PID=Express" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest 
